@@ -1,0 +1,120 @@
+/*Universal Selector (*) */
+* {
+    background-color: darkslategray;
+    color: navajowhite;
+    font-size: 32px;
+}
+
+body {
+    border: 4px solid blueviolet;
+    padding: 8px;
+}
+
+/*Tag Selector*/
+p {
+    color: lightskyblue;
+}
+
+h1 {
+
+}
+
+/*Class Selector*/
+.highlight {
+    color:lawngreen;
+}
+
+/* ID Selector */
+#header {
+    background-color: yellowgreen;
+}
+
+/*Descendant Selector*/
+article p {
+    color:deeppink;
+}
+
+article h2 {
+    color: darkorange;
+}
+
+/*Child Selector (parent > child)
+Matches an element that is a
+direct child of a specific element*/
+ul > li{
+    list-style: square;
+    color: orchid;
+}
+
+/*General Selector( element1 + element2)
+it will select the element which will follows*/
+h2 ~ p {
+    background-color: #572a01;
+}
+
+/*Sibling Selector*/
+h2 + p {
+    background-color: lightcoral;
+}
+
+/*Attribute Selector*/
+input[type="text"] {
+    color:black;
+    font-size:26px;
+    border-color:green;
+}
+
+input[type="submit"] {
+    background-color: yellow;
+    color: black;
+    border-radius: 40%;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+/*Pseudo-classes Selector*/
+input[type="submit"]:hover {
+    background-color: black;
+    color:white;
+}
+
+ul li:first-child {
+    background-color: red;
+
+}
+
+ul li:nth-child(2) {
+    background-color: green;
+
+}
+
+ul li:last-child {
+    background-color: blue;
+
+}
+
+a:hover {
+    background-color: green;
+    color: black;
+}
+
+
+/*Psuedo-elements*/
+p::before {
+    content:"chilli";
+    font-size: 40px
+}
+
+/*Grouping Selectors*/
+h1, p {
+    font-family: Monaco, serif;
+
+}
+
+p.lorem::first-letter {
+    background-color: black;
+    initial-letter: 3 10;
+}
+
+
+
