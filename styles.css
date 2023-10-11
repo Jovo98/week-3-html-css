@@ -1,1 +1,21 @@
-#desktop-selections
+.div-1 {
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    /*TOP - RIGHT - BOT - LEFT*/
+    margin: 0;
+    border: 10px solid yellow;
+}
+
+.div-2 {
+    background-color: rgba(55, 81, 199, 0.64);
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 20px
+
+}
+
+.
