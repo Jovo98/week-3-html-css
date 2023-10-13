@@ -10,21 +10,33 @@
           box-sizing: border-box;
           font-family: monaco,serif;
       }
+      body {
+          margin: 0;
+          position:relative;
+      }
 
       nav {
-          display: none;
           background-color: #000000;
-          border-radius: 8px;
+          border-radius: 0;
+          position: static;
+          left: 0;
+          top: 55px;
+          height: 100vh;
+          width: 50%;
+
       }
       header {
-          border-radius: 8px;
+          display: flex;
+          border-radius: 0;
           color: white;
           background: black;
           position: sticky;
-          top: 0;
-          left:0;
+          justify-content: space-between;
+
           margin: 0;
           padding: 8px 16px;
+          right: 0;
+
       }
 
 
@@ -46,9 +58,10 @@
       nav ul {
           list-style-type: none;
           margin: 0 ;
-          padding: 8px 16px;
+          padding: 16px 16px;
       }
       nav li {
+          padding: 8px;
 
       }
 
@@ -77,6 +90,12 @@
           }
           nav {
               display: block;
+              position: static;
+              top:initial;
+              width: initial;
+              left: initial;
+              padding-left: 8px;
+              height:auto;
           }
           nav li {
               display: inline-block;
@@ -105,6 +124,12 @@
         <input type="checkbox" id="menu-checkbox"/>
         <label for="menu-checkbox">Burger
         </label>
+
+        <div style="
+        display: inline-flex;
+        align-self: center">
+            Logo
+        </div>
         <nav>
             <ul>
                 <li>
@@ -121,31 +146,15 @@
     </header>
 
     <main>
-      <h1>Jo Ipsum Minion</h1>
-      <p>
-        Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo! Wiiiii.
-        Baboiii hana dul sae bappleees pepete hana dul sae po kass po kass baboiii. Belloo! hahaha baboiii poopayee hahaha belloo! La bodaaa bee do bee do bee do chasy.
-        Pepete poopayee tank yuuu! Butt la bodaaa wiiiii aaaaaah ti aamoo! Poulet tikka masala. Tatata bala tu daa ti aamoo! Poulet tikka masala poopayee wiiiii bappleees hana dul sae ti aamoo! Jeje belloo!
-        Pepete poopayee tank yuuu! Butt la bodaaa wiiiii aaaaaah ti aamoo! Poulet tikka masala. Tatata bala tu daa ti aamoo! Poulet tikka masala poopayee wiiiii bappleees hana dul sae ti aamoo! Jeje belloo!
-      </p>
-      <p>
-        Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo! Wiiiii.
-        Baboiii hana dul sae bappleees pepete hana dul sae po kass po kass baboiii. Belloo! hahaha baboiii poopayee hahaha belloo! La bodaaa bee do bee do bee do chasy.
-        Pepete poopayee tank yuuu! Butt la bodaaa wiiiii aaaaaah ti aamoo! Poulet tikka masala. Tatata bala tu daa ti aamoo! Poulet tikka masala poopayee wiiiii bappleees hana dul sae ti aamoo! Jeje belloo!
-        Pepete poopayee tank yuuu! Butt la bodaaa wiiiii aaaaaah ti aamoo! Poulet tikka masala. Tatata bala tu daa ti aamoo! Poulet tikka masala poopayee wiiiii bappleees hana dul sae ti aamoo! Jeje belloo!
-      </p>
-      <p>
-        Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo! Wiiiii.
-        Baboiii hana dul sae bappleees pepete hana dul sae po kass po kass baboiii. Belloo! hahaha baboiii poopayee hahaha belloo! La bodaaa bee do bee do bee do chasy.
-        Pepete poopayee tank yuuu! Butt la bodaaa wiiiii aaaaaah ti aamoo! Poulet tikka masala. Tatata bala tu daa ti aamoo! Poulet tikka masala poopayee wiiiii bappleees hana dul sae ti aamoo! Jeje belloo!
-        Pepete poopayee tank yuuu! Butt la bodaaa wiiiii aaaaaah ti aamoo! Poulet tikka masala. Tatata bala tu daa ti aamoo! Poulet tikka masala poopayee wiiiii bappleees hana dul sae ti aamoo! Jeje belloo!
-      </p>
-      <p>
-        Minions ipsum gelatooo uuuhhh para tú bappleees para tú tank yuuu! Gelatooo po kass. Bappleees poopayee tulaliloo pepete belloo! Wiiiii.
-        Baboiii hana dul sae bappleees pepete hana dul sae po kass po kass baboiii. Belloo! hahaha baboiii poopayee hahaha belloo! La bodaaa bee do bee do bee do chasy.
-        Pepete poopayee tank yuuu! Butt la bodaaa wiiiii aaaaaah ti aamoo! Poulet tikka masala. Tatata bala tu daa ti aamoo! Poulet tikka masala poopayee wiiiii bappleees hana dul sae ti aamoo! Jeje belloo!
-        Pepete poopayee tank yuuu! Butt la bodaaa wiiiii aaaaaah ti aamoo! Poulet tikka masala. Tatata bala tu daa ti aamoo! Poulet tikka masala poopayee wiiiii bappleees hana dul sae ti aamoo! Jeje belloo!
-      </p>
+
+<div style="display: flex">
+        <div style="background-color: blue;
+flex-grow: 1; flex-basis: 0; order:2;">One</div>
+        <div style="background-color: red; flex-grow: 1; flex-basis: 0; order:1;">Two</div>
+
+
+</div>
+
 
 
     </main>
