@@ -26,6 +26,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+
         }
 
         .qr-card {
@@ -37,7 +39,11 @@
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
+
+
+
         }
+
 
         .header-body {
             width: 288px;
@@ -48,8 +54,13 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            z-index: 1;
+            overflow: hidden;
         }
+
+        .index {
+            z-index:10;
+        }
+
 
         .qr-content {
             flex-direction: column;
@@ -82,14 +93,18 @@
             position: absolute;
             top: 0;
             left:0;
-            z-index: -1;
+            clip:auto;
+
+            z-index: 0;
+
         }
 
         .circle-bot {
             position: absolute;
-            bottom: 0;
+            bottom: -4px;
             right: 0;
-            z-index: -1;
+            z-index: 0;
+
         }
 
         /* Small (sm) */
@@ -134,7 +149,7 @@
                 </span>
 
 
-                <span><img src="assets/images/qr-code.svg" alt="qr-code"/></span>
+                <span class="index"><img src="assets/images/qr-code.svg" alt="qr-code"/></span>
 
                 <span class="circle-bot">
                     <svg width="157" height="84" viewBox="0 0 157 84" fill="none"
