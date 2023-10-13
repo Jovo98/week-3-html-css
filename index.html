@@ -4,11 +4,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link href="styles.css" type="text/css" rel="stylesheet">
-    <title>Mo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>QR Code</title>
+
+    <style>
+        :root {
+            --cappucino: #4B3832;
+            --background-color: #D5E1EF;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: outfit, serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .qr-card {
+            border-radius: 20px;
+            background-color: white;
+            padding: 1rem;
+            width: 320px;
+            height: 497px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .header-body {
+            width: 288px;
+            height: 288px;
+            background-color: #2C7DFA;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .qr-content {
+            flex-direction: column;
+            display: flex;
+            gap: 1rem;
+            padding: 0 1rem 40px 1rem;
+        }
+
+        .qr-content-heading {
+            font-weight: bold;
+            color: #1F314F;
+            font-size: 22px;
+            letter-spacing: 0;
+            line-height: normal;
+        }
+
+        .qr-content-footer {
+            color: #7D889E;
+            font-weight: normal;
+            font-size: 15px;
+            letter-spacing: 0.19px;
+        }
+
+        .qr-content-heading, .qr-content-footer {
+
+            text-align: center;
+        }
+
+        .circle-top{
+            position: absolute;
+            top: 0;
+            left:0;
+            z-index: -1;
+        }
+
+        .circle-bot {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        /* Small (sm) */
+        @media (min-width: 640px) {
+        }
+
+        /* Medium (md) */
+        @media (min-width: 768px) {
+            /* Your styles for the medium breakpoint here */
+        }
+
+        /* Large (lg) */
+        @media (min-width: 1024px) {
+            /* Your styles for the large breakpoint here */
+        }
+
+        /* Extra Large (xl) */
+        @media (min-width: 1280px) {
+            /* Your styles for the extra large breakpoint here */
+        }
+
+        /* 2XL (2xl) */
+        @media (min-width: 1536px) {
+            /* Your styles for the 2XL breakpoint here */
+        }
+    </style>
 
 
 </head>
 <body>
+
+    <div class="qr-card">
+
+        <!-- QR Header -->
+        <div class="qr-header">
+            <div class="header-body">
+
+                <span class="circle-top">
+                    <svg width="197" height="164" viewBox="0 0 197 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32.5" cy="-0.5" r="164" fill="#3685FF"/>
+                    </svg>
+                </span>
+
+
+                <span><img src="assets/images/qr-code.svg" alt="qr-code"/></span>
+
+                <span class="circle-bot">
+                    <svg width="157" height="84" viewBox="0 0 157 84" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                <circle cx="135.5" cy="135.5" r="135" fill="#3685FF"/>
+                </svg>
+                </span>
+            </div>
+        </div>
+        <!-- QR Body -->
+        <div class="qr-content">
+            <div class="qr-content-heading">Improve your front-end skills by building projects</div>
+            <div class="qr-content-footer">Scan the QR code to visit Frontend Mentor and take your coding skills to the
+                next level
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
