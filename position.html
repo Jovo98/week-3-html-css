@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-size: 2rem;
+        }
+
+        body {
+            height: 200vh;
+            margin: 0;
+        }
+
+        .parent {
+            background-color: blue;
+            padding: .25rem;
+
+            height: 100%
+        }
+
+        .child1 {
+            background-color: #AA1111;
+            padding: .25rem;
+            position: sticky;
+            top:0;
+            border-radius: 8px 8px 0 0;
+
+        }
+
+        .child2 {
+            background-color: #00AA88;
+            padding: .25rem;
+        }
+
+
+        .child3 {
+            background-color: #7D889E;
+            padding: .25rem;
+            position: sticky;
+            top:80px;
+            border-radius: 0 0 8px 8px;
+            margin:0 ;
+            left:0;
+
+
+            width: 100%
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Parent
+        <div class="child1">One</div>
+        <div class="child2">Two</div>
+        <div class="child3">Three</div>
+
+
+
+
+    </div>
+
+</body>
+</html>
